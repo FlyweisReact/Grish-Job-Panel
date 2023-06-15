@@ -1,0 +1,14 @@
+/** @format */
+import axios from "axios";
+
+const BaseURI = 'https://gadi-driver-u8ym.vercel.app/'
+
+
+export const GetAllEmployer = async () => {
+    try {
+        const reposnse = await axios.get(`${BaseURI}api/v1/employ`)
+        return data
+    }catch(e) { 
+        console.log(e)
+    }
+};
