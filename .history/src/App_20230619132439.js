@@ -21,6 +21,8 @@ import DriverDetails from "./E-CommerceAdmin/pages/DriverDetails";
 import Post from "./E-CommerceAdmin/pages/Post";
 import Notification from "./E-CommerceAdmin/pages/Notification";
 import Help from "./E-CommerceAdmin/pages/Help";
+import ProductList from "./Redux/ProductList";
+import Cart from "./Redux/Cart";
 
 function App() {
   return (

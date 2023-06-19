@@ -47,6 +47,7 @@ function App() {
         <Route path="/notification" element={<Notification />} />
         <Route path='/help_support' element={<Help />} />
 
+        <Route path="/prod" element={<Pr}
 
       </Routes>
     </>

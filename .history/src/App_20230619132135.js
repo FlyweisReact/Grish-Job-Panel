@@ -21,6 +21,7 @@ import DriverDetails from "./E-CommerceAdmin/pages/DriverDetails";
 import Post from "./E-CommerceAdmin/pages/Post";
 import Notification from "./E-CommerceAdmin/pages/Notification";
 import Help from "./E-CommerceAdmin/pages/Help";
+import ProductList from "./Redux/ProductList";
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
         <Route path="/notification" element={<Notification />} />
         <Route path='/help_support' element={<Help />} />
 
+        <Route path="/prod" element={<ProductList />} />
 
       </Routes>
     </>
