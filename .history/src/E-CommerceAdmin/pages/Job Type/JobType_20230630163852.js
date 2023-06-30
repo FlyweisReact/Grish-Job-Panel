@@ -117,7 +117,7 @@ const JobType = () => {
   const deleteHandler = async (id) => {
     try {
       const { data } = await axios.delete(
-        `https://gadi-driver-u8ym.vercel.app/api/v1/jobType/${id}`
+        `https://gadi-driver-u8ym.vercel.app/api/v1/subscrip/${id}`
       );
       toast.success(data.message);
       fetchHandler();

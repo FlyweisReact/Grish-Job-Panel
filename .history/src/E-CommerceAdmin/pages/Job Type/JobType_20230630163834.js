@@ -71,12 +71,12 @@ const JobType = () => {
       e.preventDefault();
       try {
         const { data } = await axios.post(
-          "https://gadi-driver-u8ym.vercel.app/api/v1/jobType",
+          "https://gadi-driver-u8ym.vercel.app/api/v1/subscrip",
           {
             jobType : plan
           }
         );
-        toast.success(`${data.jobType} is Created`);
+        toast.success(`${data.plan} is Created`);
         fetchHandler();
         props.onHide();
       } catch (e) {
@@ -117,7 +117,7 @@ const JobType = () => {
   const deleteHandler = async (id) => {
     try {
       const { data } = await axios.delete(
-        `https://gadi-driver-u8ym.vercel.app/api/v1/jobType/${id}`
+        `https://gadi-driver-u8ym.vercel.app/api/v1/subscrip/${id}`
       );
       toast.success(data.message);
       fetchHandler();

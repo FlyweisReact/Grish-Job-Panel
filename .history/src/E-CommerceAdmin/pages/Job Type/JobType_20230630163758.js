@@ -17,9 +17,9 @@ const JobType = () => {
   const fetchHandler = async () => {
     try {
       const { data } = await axios.get(
-        "https://gadi-driver-u8ym.vercel.app/api/v1/jobType"
+        "
       );
-      setData(data);
+      setData(data.msg);
     } catch (e) {
       console.log(e);
     }
@@ -71,12 +71,12 @@ const JobType = () => {
       e.preventDefault();
       try {
         const { data } = await axios.post(
-          "https://gadi-driver-u8ym.vercel.app/api/v1/jobType",
+          "https://gadi-driver-u8ym.vercel.app/api/v1/subscrip",
           {
-            jobType : plan
+            plan
           }
         );
-        toast.success(`${data.jobType} is Created`);
+        toast.success(`${data.plan} is Created`);
         fetchHandler();
         props.onHide();
       } catch (e) {
@@ -117,7 +117,7 @@ const JobType = () => {
   const deleteHandler = async (id) => {
     try {
       const { data } = await axios.delete(
-        `https://gadi-driver-u8ym.vercel.app/api/v1/jobType/${id}`
+        `https://gadi-driver-u8ym.vercel.app/api/v1/subscrip/${id}`
       );
       toast.success(data.message);
       fetchHandler();
@@ -180,7 +180,7 @@ const JobType = () => {
                         {slicedData?.map((i, index) => (
                           <tr key={index}>
                             <td> #{index + 1} </td>
-                            <td> {i.jobType} </td>
+                            <td> {i.plan} </td>
                             <td>
                               <i
                                 className="fa-sharp fa-solid fa-trash"
