@@ -49,7 +49,7 @@ const Sidebar = ({ hamb, setHamb }) => {
     },
 
     {
-      icon: <i className="fa-solid fa-calendar-days text-xl mr-3 rounded-full" />,
+      icon: <i className="fa-solid fa-user text-xl mr-3 rounded-full"></i>,
       link: "/pushNotification",
       name: "Subscription",
     },

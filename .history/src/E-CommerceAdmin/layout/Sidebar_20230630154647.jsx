@@ -5,7 +5,6 @@ import { RiCloseLine } from "react-icons/ri";
 import { Link, useNavigate } from "react-router-dom";
 import { BiLogOutCircle } from "react-icons/bi";
 import { MdDashboardCustomize } from "react-icons/md";
-import { MdCategory } from 'react-icons/md'
 
 const Sidebar = ({ hamb, setHamb }) => {
   const navigate = useNavigate();
@@ -23,33 +22,33 @@ const Sidebar = ({ hamb, setHamb }) => {
     },
     {
       icon: (
-        <i className="fa-solid fa-paperclip text-xl mr-3 rounded-full"></i>
+        <i className="fa-solid fa-paper text-xl mr-3 rounded-full"></i>
       ),
       link: "/job",
       name: "Jobs",
     },
 
     {
-      icon: <MdCategory className="text-xl mr-3 rounded-full " />,
+      icon: <MdDashboardCustomize className="text-xl mr-3 rounded-full " />,
       link: "/Category",
       name: "Category",
     },
     {
-      icon: <i className="fa-solid fa-id-card  text-xl mr-3 rounded-full"></i>,
+      icon: <i className="fa-solid fa-truck  text-xl mr-3 rounded-full"></i>,
       link: "/Drivers",
       name: "Drivers",
     },
 
     {
       icon: (
-        <i className="fa-solid fa-car text-xl mr-3 rounded-full"></i>
+        <i className="fa-brands fa-product-hunt text-xl mr-3 rounded-full"></i>
       ),
       link: "/Vehicle_Types",
       name: "Vehicle Types",
     },
 
     {
-      icon: <i className="fa-solid fa-calendar-days text-xl mr-3 rounded-full" />,
+      icon: <i className="fa-solid fa-user text-xl mr-3 rounded-full"></i>,
       link: "/pushNotification",
       name: "Subscription",
     },

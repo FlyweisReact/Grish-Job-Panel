@@ -6,6 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { BiLogOutCircle } from "react-icons/bi";
 import { MdDashboardCustomize } from "react-icons/md";
 import { MdCategory } from 'react-icons/md'
+import { GrPlan } from 'react-icons/gr'
 
 const Sidebar = ({ hamb, setHamb }) => {
   const navigate = useNavigate();

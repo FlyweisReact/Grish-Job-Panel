@@ -35,21 +35,21 @@ const Sidebar = ({ hamb, setHamb }) => {
       name: "Category",
     },
     {
-      icon: <i className="fa-solid fa-id-card  text-xl mr-3 rounded-full"></i>,
+      icon: <i className="fa-solid fa-truck  text-xl mr-3 rounded-full"></i>,
       link: "/Drivers",
       name: "Drivers",
     },
 
     {
       icon: (
-        <i className="fa-solid fa-car text-xl mr-3 rounded-full"></i>
+        <i className="fa-brands fa-product-hunt text-xl mr-3 rounded-full"></i>
       ),
       link: "/Vehicle_Types",
       name: "Vehicle Types",
     },
 
     {
-      icon: <i className="fa-solid fa-calendar-days text-xl mr-3 rounded-full" />,
+      icon: <i className="fa-solid fa-user text-xl mr-3 rounded-full"></i>,
       link: "/pushNotification",
       name: "Subscription",
     },
