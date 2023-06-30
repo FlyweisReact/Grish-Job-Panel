@@ -1,3 +1,0 @@
- export GetAllEmployer = async () => {
-
-}

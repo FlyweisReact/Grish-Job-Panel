@@ -8,11 +8,11 @@ import { AllCategory, AllDrivers, AllJobs, AllVehicleType, GetAllEmployer } from
 
 const Dashboard = () => {
   const navigate = useNavigate();
-  const [adminCount, setAdminCount] = useState([]);
-  const [userCount, setUserCount] = useState([]);
-  const [categoryCount, setCategoryCount] = useState("");
-  const [ productCount , setProductCount ] = useState("")
-  const [ orderCount , setOrderCount ] = useState("")
+  const [adminCount, setAdminCount] = useState(0);
+  const [userCount, setUserCount] = useState(0);
+  const [categoryCount, setCategoryCount] = useState(0);
+  const [ productCount , setProductCount ] = useState(0)
+  const [ orderCount , setOrderCount ] = useState(0)
 
 
   const fetchAdmin = async () => {
@@ -80,7 +80,7 @@ const Dashboard = () => {
         ></i>
       ),
       bg: "#4099ff",
-      link: "/Admin",
+      link: "/Employer",
     },
     {
       progress: "bg-green-400",
@@ -104,7 +104,7 @@ const Dashboard = () => {
       number: productCount,
       icon: <i className=" fa-brands fa-slack text-2xl text-[#64878e]"></i>,
       bg: "#64878e",
-      link: "/Support",
+      link: "/Drivers",
     },
   
     {
@@ -115,7 +115,7 @@ const Dashboard = () => {
         <i className=" fa-solid fa-bag-shopping text-2xl text-[#1b6975]"></i>
       ),
       bg: "#1b6975",
-      link: "/Product",
+      link: "/Vehicle_Types",
     },
   ];
   return (

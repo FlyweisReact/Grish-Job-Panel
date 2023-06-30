@@ -24,7 +24,7 @@ const Sidebar = ({ hamb, setHamb }) => {
       icon: (
         <i className="fa-solid fa-cart-shopping text-xl mr-3 rounded-full"></i>
       ),
-      link: "/Customer",
+      link: "/job",
       name: "Jobs",
     },
 
@@ -74,7 +74,7 @@ const Sidebar = ({ hamb, setHamb }) => {
 
     {
       icon: <i className="fa-solid fa-user-tie text-xl mr-3 rounded-full"></i>,
-      link: "/privacy",
+      link: "/petrol",
       name: "Petrol Rate",
     },
     {
@@ -96,6 +96,31 @@ const Sidebar = ({ hamb, setHamb }) => {
       icon: <i className="fa-solid fa-user-tie text-xl mr-3 rounded-full"></i>,
       link: "/post",
       name: "Post",
+    },
+    {
+      icon: <i className="fa-solid fa-user-tie text-xl mr-3 rounded-full"></i>,
+      link: "/location",
+      name: "Location",
+    },
+    {
+      icon: <i className="fa-solid fa-user-tie text-xl mr-3 rounded-full"></i>,
+      link: "/language",
+      name: "Language",
+    },
+    {
+      icon: <i className="fa-solid fa-user-tie text-xl mr-3 rounded-full"></i>,
+      link: "/community",
+      name: "Community",
+    },
+    {
+      icon: <i className="fa-solid fa-user-tie text-xl mr-3 rounded-full"></i>,
+      link: "/plan",
+      name: "Package",
+    },
+    {
+      icon: <i className="fa-solid fa-user-tie text-xl mr-3 rounded-full"></i>,
+      link: "/job-type",
+      name: "Job Type ",
     },
   ];
 

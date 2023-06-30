@@ -5,9 +5,9 @@ import { VscEyeClosed, VscEye } from "react-icons/vsc";
 import { AiOutlineMail } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import { Oval } from "react-loader-spinner";
-import { Alert } from "react-bootstrap";
+import { Alert } from 'react-bootstrap'
 import axios from "axios";
+import  { Spin  } from 'antd'
 
 const Login = () => {
   const [pass, setPass] = useState(false);
@@ -95,7 +95,7 @@ const Login = () => {
               onClick={submitHandler}
             >
               {loading ? (
-                <Oval height={30} secondaryColor="black" color="black" />
+                <Spin />
               ) : (
                 "LOG IN"
               )}

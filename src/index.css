@@ -499,25 +499,20 @@ html {
 
 .Thrree {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 20px;
 }
-.Thrree img {
-  position: absolute;
-  width: 80%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.Thrree div{
+  max-width: 200px;
+  max-height: 300px;
 }
-.Thrree div {
-  position: relative;
-  height: 300px;
-  width: 200px;
+.Thrree div img{
+  max-width: 100%;
+  max-height: 100%;
 }
-
 .SpinComp {
   margin: 20px 0;
   margin-bottom: 20px;
