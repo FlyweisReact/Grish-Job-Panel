@@ -54,7 +54,7 @@ const Employer = () => {
   const GetAllEmployes = async () => {
     try {
       const { data } = await GetAllEmployer();
-      setData(data.data);
+      setData(data.msg);
     } catch (E) {
       console.log(E);
     }

@@ -5,7 +5,7 @@ const BaseUrl = "https://gadi-driver-u8ym.vercel.app/";
 // Employers
 export const GetAllEmployer = async () => {
   try {
-    const response = await axios.get(`${BaseUrl}api/v1/admin/Users`);
+    const response = await axios.get(`${BaseUrl}api/v1/employ`);
     return response;
   } catch (e) {
     console.log(e);

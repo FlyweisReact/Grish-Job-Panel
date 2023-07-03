@@ -25,7 +25,7 @@ const Login = () => {
       const { data } = await axios.post(
         "https://gadi-driver-u8ym.vercel.app/api/v1/admin/login",
         {
-          email : userName,
+          userName,
           password,
         }
       );
